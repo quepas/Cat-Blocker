@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Win32AsyncInput.h"
 #include <cinder/app/KeyEvent.h>
 #include <cinder/app/AppBasic.h>
 
@@ -10,8 +11,7 @@ public:
   void setup();
   void update();
   void draw();
-  void keyDown(ci::app::KeyEvent event);
+
 private:
-  ci::Color current_color_;
-  bool is_hidden_;
+  Win32AsyncInput input_;
 };
