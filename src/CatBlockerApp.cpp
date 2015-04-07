@@ -9,6 +9,7 @@ void CatBlockerApp::prepareSettings(Settings *settings)
 {
   settings->setWindowSize(0, 0);
   settings->setBorderless(true);
+  settings->setAlwaysOnTop(true);
 }
 
 void CatBlockerApp::setup()
