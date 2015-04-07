@@ -155,5 +155,7 @@ int Win32AsyncInput::countKeysDown()
   for (unsigned i = 0; i < 256; ++i) {
     if (keys_down_[i]) ++counter;
   }
+  // TempFix for #1
+  if (keys_down_[VK_RMENU] && keys_down_[VK_LCONTROL]) --counter;
   return counter;
 }
