@@ -129,14 +129,9 @@ bool Win32AsyncInput::isKeyDownAsync(int key)
   return GetAsyncKeyState(key) & 0x8000;
 }
 
-bool Win32AsyncInput::isShiftDown()
+bool Win32AsyncInput::isLControlDown()
 {
-  return isKeyDown(VK_SHIFT);
-}
-
-bool Win32AsyncInput::isControlDown()
-{
-  return isKeyDown(VK_CONTROL);
+  return isKeyDown(VK_LCONTROL);
 }
 
 bool Win32AsyncInput::isTabDown()

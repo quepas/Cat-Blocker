@@ -19,7 +19,7 @@ void CatBlockerApp::setup()
 void CatBlockerApp::update()
 {
   input_.update();
-  if (input_.isSpaceDown() && input_.isControlDown() && input_.isTabDown()) {
+  if (input_.isSpaceDown() && input_.isLControlDown() && input_.isTabDown()) {
     setFullScreen(false);
   }
   else if (input_.countKeysDown() >= 4) {

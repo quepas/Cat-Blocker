@@ -8,8 +8,7 @@ public:
   Win32AsyncInput();
   ~Win32AsyncInput();
 
-  bool isShiftDown();
-  bool isControlDown();
+  bool isLControlDown();
   bool isTabDown();
   bool isSpaceDown();
 
